@@ -6,6 +6,6 @@ A simple web app that performs CRUD operations that are related to a Car. It use
 
 * Node v10.16.3
 * NPM v6.9.0
-* MongoDB v4.28
+* MongoDB v4.2.8
 * Angular CLI: 8.3.9
 * (optional) Postman

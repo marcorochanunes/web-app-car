@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-body">
+        <div>
+            <h3>Create Car</h3>
+            <br>
+            <div class="row">
+                <label type="text" class="col-sm-6 col-md-1">Model:</label>
+                <input class="form-control col-sm-6 col-md-5" [(ngModel)]="newCar.model">
+                <label class="col-sm-6 col-md-1">Horse Power (HP)</label>
+                <input type="number" oninput="this.value = Math.abs(this.value)" class="form-control col-sm-6 col-md-5"
+                    [(ngModel)]="newCar.horsePower">
+            </div>
+            <br>
+            <div class="row">
+                <label class="col-sm-6 col-md-1">Engine Capacity (CC)</label>
+                <input type="number" oninput="this.value = Math.abs(this.value)" class="form-control col-sm-6 col-md-5"
+                    [(ngModel)]="newCar.engineCapacity">
+                <label class="col-sm-6 col-md-1">Doors</label>
+                <input type="number" oninput="this.value = Math.abs(this.value)" class="form-control col-sm-6 col-md-5"
+                    [(ngModel)]="newCar.doors">
+            </div>
+            <br>
+            <div class="row">
+                <label class="col-sm-6 col-md-1">Seats</label>
+                <input type="number" oninput="this.value = Math.abs(this.value)" class="form-control col-sm-6 col-md-5"
+                    [(ngModel)]="newCar.seats">
+            </div>
+            <br>
+            <button class="btn btn-outline-primary" (click)="saveCar()">Save Car</button>
+        </div>
+    </div>
+</div>

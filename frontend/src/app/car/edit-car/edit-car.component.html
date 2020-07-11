@@ -1,0 +1,32 @@
+<div *ngIf="currentCar != null" class="card">
+    <div class="card-body">
+        <div>
+            <h3>Edit Car</h3>
+            <br>
+            <div class="row">
+                <label type="text" class="col-sm-6 col-md-1">Model:</label>
+                <input class="form-control col-sm-6 col-md-5" [(ngModel)]="currentCar.model">
+                <label class="col-sm-6 col-md-1">Horse Power (HP)</label>
+                <input type="number" oninput="this.value = Math.abs(this.value)" class="form-control col-sm-6 col-md-5"
+                    [(ngModel)]="currentCar.horsePower">
+            </div>
+            <br>
+            <div class="row">
+                <label class="col-sm-6 col-md-1">Engine Capacity (CC)</label>
+                <input type="number" oninput="this.value = Math.abs(this.value)" class="form-control col-sm-6 col-md-5"
+                    [(ngModel)]="currentCar.engineCapacity">
+                <label class="col-sm-6 col-md-1">Doors</label>
+                <input type="number" oninput="this.value = Math.abs(this.value)" class="form-control col-sm-6 col-md-5"
+                    [(ngModel)]="currentCar.doors">
+            </div>
+            <br>
+            <div class="row">
+                <label class="col-sm-6 col-md-1">Seats</label>
+                <input type="number" oninput="this.value = Math.abs(this.value)" class="form-control col-sm-6 col-md-5"
+                    [(ngModel)]="currentCar.seats">
+            </div>
+            <br>
+            <button class="btn btn-outline-primary" (click)="updateCar()">Update Car</button>
+        </div>
+    </div>
+</div>

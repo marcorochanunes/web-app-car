@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
+This app allows CRUD operations related to a Car.
+
 ## Development server
 
 Run `npm install` to install dependencies.
